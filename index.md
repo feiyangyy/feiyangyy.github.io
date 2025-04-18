@@ -1,6 +1,6 @@
 ---
 layout: default  # 若主题支持布局
-title: "Waypoint"
+title: "​Cyber ​Rest Stop​"
 ---
 
 ## Hello| ¡Hola| Bonjour | Hallo| Здравствуйте |안녕하세요 | 你好
