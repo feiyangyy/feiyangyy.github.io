@@ -11,3 +11,5 @@ title: "​Cyber ​Rest Stop​"
 ## 关于我
 - **技能**：C++ Programmer, python kid, and rust learner.
 - **兴趣**：音视频开发、编程与编程哲学、软件工程
+## 杂记
+[设计模式入门之何为设计模式](design_pattern/)
