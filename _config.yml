@@ -1,6 +1,6 @@
 # 站点信息
-title: "音视频小白"                   # 网页 <title> 标签和首页标题                  :contentReference[oaicite:0]{index=0}
-description: "分享个人的技术理解和见闻"       # meta 描述，有利于 SEO                 :contentReference[oaicite:1]{index=1}
+title: "Brian Griffin's Blog"                   # 网页 <title> 标签和首页标题                  :contentReference[oaicite:0]{index=0}
+description: "Nice to see you!"       # meta 描述，有利于 SEO                 :contentReference[oaicite:1]{index=1}
 author: "chli"                     # 作者信息，可用于模板中引用               :contentReference[oaicite:2]{index=2}
 
 # 站点地址配置
