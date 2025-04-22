@@ -121,7 +121,7 @@ after the operation, we can see the outputs:
 ```bash
 head -c 188 streams1.ts | hexdump -C
 ```
-*文件尾部自然想到tail, 文件尾部自然想到head*
+*文件尾部自然想到tail, 文件头部自然想到head*
 
 结果:
 ```
