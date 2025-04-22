@@ -18,6 +18,8 @@ title: "​Cyber ​Rest Stop​"
 
 [设计模式入门之策略模式](design_pattern/strategy.md)
 
+[设计模式入门之观察者模式](design_pattern/observer.md)
+
 [dl加载使用pthread的库导致crash的问题分析](gdb/动态记载library缺少pthread符号.md)
 
 
