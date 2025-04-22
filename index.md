@@ -12,11 +12,14 @@ title: "​Cyber ​Rest Stop​"
 - **技能**：C++ Programmer, python kid, and rust learner.
 - **兴趣**：音视频开发、编程与编程哲学、软件工程
 ## 杂记
+
 [设计模式入门之何为设计模式](design_pattern/template.md)
+
 [设计模式入门之策略模式](design_pattern/strategy.md)
 
 [dl加载使用pthread的库导致crash的问题分析](gdb/动态记载library缺少pthread符号.md)
 
 
 ## 音视频
+
 [HLS流解析](av/HLS流详解.md)
