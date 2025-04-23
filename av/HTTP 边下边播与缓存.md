@@ -38,6 +38,11 @@ sudo service nginx restart
 
 将视频文件拷贝到/some/path 下，通过浏览器访问`ip/` 即可看到文件列表了，选择对应的文件即可下载
 
+
+或者，我们也可以用rust来搭建一个简单的http文件服务器:
+```rust
+```
+
 ## 验证ffplay的播放行为
 
 ## 验证vlc的播放行为
