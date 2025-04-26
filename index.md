@@ -12,7 +12,9 @@ title: "​Cyber ​Rest Stop​"
 - **技能**：C++ Programmer, python kid, and rust learner.
 - **兴趣**：音视频开发、编程与编程哲学、软件工程
 
-## 杂记
+
+
+## 设计模式
 
 [设计模式入门之何为设计模式](design_pattern/template.md)
 
@@ -22,9 +24,22 @@ title: "​Cyber ​Rest Stop​"
 
 [设计模式入门之工厂模式](design_pattern/factory.md)
 
+[TODO:设计模式之桥模式]()
+
+## 杂记
+
+[266线程池线程安全性分析](misc/266线程池线程安全性分析.md)
+
 [dl加载使用pthread的库导致crash的问题分析](gdb/动态记载library缺少pthread符号.md)
 
+## 数学杂记
+
+*note: 这些相当于学习的笔记草稿，会存在一些符号错误或者和标准写法不同的地方*
+
 [一维卡尔曼滤波](https://github.com/feiyangyy/feiyangyy.github.io/blob/main/files/kalman.pdf)
+
+[刚体旋转]((https://github.com/feiyangyy/feiyangyy.github.io/blob/main/files/rotation.pdf))
+
 
 ## 音视频
 
