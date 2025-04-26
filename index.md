@@ -24,7 +24,7 @@ title: "​Cyber ​Rest Stop​"
 
 [dl加载使用pthread的库导致crash的问题分析](gdb/动态记载library缺少pthread符号.md)
 
-[一维卡尔曼滤波](files/kalman.pdf)
+[一维卡尔曼滤波](https://github.com/feiyangyy/feiyangyy.github.io/blob/main/files/kalman.pdf)
 
 ## 音视频
 
