@@ -41,6 +41,9 @@ title: "​Cyber ​Rest Stop​"
 [刚体旋转]((https://github.com/feiyangyy/feiyangyy.github.io/blob/main/files/rotation.pdf))
 
 
+## 算法
+[基础排序算法](algorithm/基础排序算法.md)
+
 ## 音视频
 
 [HLS流解析](av/HLS流详解.md)
