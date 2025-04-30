@@ -44,6 +44,10 @@ title: "​Cyber ​Rest Stop​"
 ## 算法
 [基础排序算法](algorithm/基础排序算法.md)
 
+## 乱整
+[AstrBot 搭建](screwing/AstrBot搭建教程.md)
+
+
 ## 音视频
 
 [HLS流解析](av/HLS流详解.md)
