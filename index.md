@@ -24,7 +24,10 @@ title: "​Cyber ​Rest Stop​"
 
 [设计模式入门之工厂模式](design_pattern/factory.md)
 
-[TODO:设计模式之桥模式]()
+设计模式相关文章不在更新，因为充斥大量样板代码，并且随处可查，我这里重复写一下也无所裨益。 我的目标重在阐述自己的理解，而理解的话一个思维导图足以，并且更利于交叉学习验证。 请直接参阅[设计模式](https://github.com/feiyangyy/feiyangyy.github.io/blob/main/daily/design_pattern.smm)
+
+这里重点推荐一个思维导图工具[mind-map](https://github.com/wanglin2/mind-map.git), 是我用过最好用的了。
+
 
 ## 杂记
 
