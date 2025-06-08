@@ -100,7 +100,7 @@ struct LSD {
         for (int ci = str_len - 1; ci >= 0; --ci) {
             // key_counters_.assign(key_counters_.size(), 0);
             std::fill(key_counters_.begin(), key_counters_.end(), 0);
-            // bad idea.
+            // 尽量不要使用C++的拷贝语义，实际上，更推荐类似于rust中明显的赋值语义
             // key_indcies_ = key_counters_;
             std::fill(key_indcies_.begin(), key_indcies_.end(), 0);
             // 计数
@@ -129,12 +129,57 @@ struct LSD {
 
 // MSD高位排序
 
+static int8_t ch_at(const std::string& s, int d) {
+    if (d >= static_cast<int>(s.size())) {
+        return -1;
+    }
+    return s[d];
+}
+
+static void quick_sort_3way(std::vector<std::string>& strs, int lo, int hi, int depth) {
+    if (hi <= lo) {
+        return;
+    }
+    // 左界
+    int lt = lo;
+    int right_pointer= hi; // 右界
+    char c = ch_at(strs[lt], depth); // strs[lt][depth]; // 要考虑不够长的情况
+    int left_pointer = lt + 1;
+    /**
+     * 1. AAAB ， lp=3, rp = 3, 此时,原地交换 rp -= 1, 等于 midlle chunk的右界
+     * 2. AAAA,  rp =3, lp 走到退出，无交换，此时rp 等于middle chunk 的右界
+     * 3. ABBB,  lp = 1, rp = 3, 2, 1, 均交换， rp =0 时，退出，此时为middle chunk的右界
+     */
+    while (left_pointer <= right_pointer) {
+        if ( ch_at(strs[left_pointer], depth) < c) {
+            std::swap((strs[left_pointer]), strs[lt]);
+            ++lt; // 左界右走
+            ++left_pointer;
+        } else if (ch_at(strs[left_pointer], depth)> c) {
+            std::swap(strs[left_pointer], strs[right_pointer]); // 当lp=rp 时，这个交换是本地交换
+            --right_pointer; // 右界左走，换过来的ch 仍然可能 >c, 因此要不断试, 如果换到和lt + 1 相等的位置
+                             // 仍然>c, 说明比他大的全部换到右边了
+        } else {
+            ++left_pointer;
+        }
+    }
+    // 递归处理左边
+    // 这里depth 不 + 1，是因为左边仍然要按照本层深度排序
+    quick_sort_3way(strs, lo, lt - 1, depth);
+    //  c = 0的情况也不存在， c=0 是结束符
+    if (c >= 0) {
+        quick_sort_3way(strs, lt, right_pointer, depth + 1);
+    }
+    quick_sort_3way(strs, right_pointer + 1, hi, depth);
+}
+
 void print_strings(const std::vector<std::string>& strs) {
     for(const auto& s:strs) {
         std::cout << s << " ";
     }
     std::cout << std::endl;
 }
+
 
 
 int main() {
@@ -153,5 +198,10 @@ int main() {
     std::vector<std::string> strs2 = generate_random_string_array(100, 10);
     lsd.DoLSD(strs2);
     print_strings(strs2);
+
+    std::vector<std::string> strs3 = generate_random_string_array(100, 10);
+    quick_sort_3way(strs3, 0, strs3.size() - 1, 0);
+    print_strings(strs3);
+
     return 0;
 }
